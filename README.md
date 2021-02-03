@@ -11,6 +11,7 @@ Liam Harbec
 - Siying Wu
 - Kexin Zhao 56958317
 
+## Proposal
 
 #### Problem Description
 In places with a limited amount of character space, people will often resort to keywords in order to express their thoughts. 
