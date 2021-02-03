@@ -15,7 +15,7 @@ Liam Harbec
 
 ### Problem Description
 In places with a limited amount of character space, people will often resort to keywords in order to express their thoughts. 
-The keyword replacement tool finds abbreviations in text passages and replaces them with the proper phrases. For example if a text passage included the string “ASAP” then the tool will replace this with “as soon as possible”.
+The keyword replacement tool finds abbreviations in text passages and replaces them with the proper phrases. For example if a text passage included the string "ASAP" then the tool will replace this with "as soon as possible".
 
 ### Edge Cases
 - Multiple keywords with no space in between
