@@ -1,4 +1,4 @@
-# COSC 320 001 Analysis of Algorithms 2020 Winter Term 2
+# COSC 320 001 Analysis of Algorithms 2020W2
 
 ## Project Number and Topic: #1 Keyword Replacement Tool
 
