@@ -8,7 +8,7 @@ Liam Harbec
 ### Group Members:
 - Liam Harbec 66453853
 - Joel Semeniuk 76751858
-- Siying Wu
+- Siying Wu 60081734
 - Kexin Zhao 56958317
 
 ## Proposal
