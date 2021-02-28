@@ -40,3 +40,40 @@ We hope to divide up the work equally as we start. We do not have a good grasp o
 
 ### Unexpected Cases/Difficulties
 None at the moment.
+
+## Milestone 1
+
+### Problem Formulation
+The simplest way to attack this problem would be to loop to check over each word in the input phrase, scanning for a word that matches an abbreviation. For a text of N words and an abbreviation library of M abbreviations, we could logically claim that our runtime is O(M*N) since we are piggybacking off of Java’s regex string match. If we use a hashmap, with a search time of O(1), M can essentially be ignored. 
+
+### Pseudocode
+For (words in input) {
+	If (word is in wordmap) {
+		Replace word with abbreviation definition;
+	} 
+}
+
+### Algorithm Analysis
+#### Loop Invariant: 
+Text input will be split by spaces into an array S. After each iteration i ends, everything to the left of and including i  (S\[0:i + 1]) should already be processed and not contain any abbreviations from the word map.
+
+#### Inductive Hypothesis:
+The loop invariant holds for each iteration of the loop
+#### Base cases (i=0):
+1. If the first element is an abbreviation, it will be replaced with the full definition
+1. If the first element is not an abbreviation, it will remain unchanged
+#### Inductive Step:
+If the inductive hypothesis holds at step i, it holds at step i+1.
+In short, if every keyword at S\[0:i+1] has been replaced after step i by the inductive hypothesis, then all keywords in S\[0:i+2] are replaced after step i+1.
+#### Conclusion
+At the termination of the algorithm, all abbreviations in S have been replaced. 
+
+### Unexpected Cases/Difficulties
+- Trying to apply induction to our algorithm was tricky at first. We spent a lot of time knocking our heads against a proverbial wall until we finally found something that made sense.
+- Midterm week crammed our schedules and as a result, we found it challenging to find time to finish this document.
+
+### Task Separation and Responsibilities
+- Liam Harbec - Created the document and set up group meeting times. Assisted in re-writing and spell-checking. 
+- Joel Semeniuk - Helped with the ideas for the algorithms as well as the proofs.
+- Siying Wu - Helped with final checking and some editing.
+- Kexin Zhao - Major debugging help with proof of correctness.
