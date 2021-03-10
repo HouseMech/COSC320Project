@@ -44,7 +44,7 @@ None at the moment.
 ## Milestone 1
 
 ### Problem Formulation
-The simplest way to attack this problem would be to loop to check over each word in the input phrase, scanning for a word that matches an abbreviation. For a text of N words and an abbreviation library of M abbreviations, we could logically claim that our runtime is O(M*N) since we are piggybacking off of Java’s regex string match. If we use a hashmap, with a search time of O(1), M can essentially be ignored. 
+The simplest way to attack this problem would be to loop to check over each word in the input phrase, scanning for a word that matches an abbreviation. For a text of N words and an abbreviation library of M abbreviations, we could logically claim that our runtime is O(M\*N) since we are piggybacking off of Java’s regex string match. If we use a hashmap, with a search time of O(1), M can essentially be ignored. 
 
 ### Pseudocode
 For (words in input) {
@@ -77,3 +77,40 @@ At the termination of the algorithm, all abbreviations in S have been replaced.
 - Joel Semeniuk - Helped with the ideas for the algorithms as well as the proofs.
 - Siying Wu - Helped with final checking and some editing.
 - Kexin Zhao - Major debugging help with proof of correctness.
+
+## Milestone 2
+
+### Algorithm Analysis
+Our second algorithm will work similarly to our first. The major difference is that it will run without the use of a hashmap. Each abbreviated keyword will be scanned into our algorithm and then compared with a list of definitions. If a match is found, the keyword is replaced with its definition. Otherwise it will be left alone.
+
+In a tweet of N words and a definition library of M words, the total running time would theoretically be O(M\*N). We would not be able to ignore M unless it is sufficiently small compared to N, especially since we are no longer including the usage of a hashmap. 
+
+#### Loop Invariant: 
+Text input will be split by spaces into an array S. After each iteration i ends, everything to the left of and including i  (S\[0:i + 1]) should already be processed and not include abbreviations from the definition library.
+#### Inductive Hypothesis:
+The loop invariant holds for each iteration of the loop
+#### Base cases (i=0):
+1. If the first element is an abbreviation, it will be replaced with the full definition
+1. If the first element is not an abbreviation, it will remain unchanged
+#### Inductive Step:
+If the inductive hypothesis holds at step i, it holds at step i+1.
+In short, if every keyword at S\[0:i+1] has been replaced after step i by the inductive hypothesis, then all keywords in S\[0:i+2] are replaced after step i+1.
+#### Conclusion
+At the termination of the algorithm, all abbreviations in S have been replaced. 
+
+### Data Structure
+We will use an array of objects to store the definitions for the abbreviations. These objects will contain a key and value property in order to match a specific definition to its abbreviation. In order to replace the abbreviation, we will use a nested loop to check each word against our array of definition objects. 
+
+### Unexpected Cases/Difficulties
+
+Despite midterm week being over, many classes had project deadlines due right after the midterms, leading to some difficulty in getting the document completed.
+
+Trying to create a new algorithm to solve this problem was a challenging process. In the end, we used scrapped content from our first algorithm.
+
+
+### Task Separation and Responsibilities
+
+Joel - Helped with second algorithm specifics, and data structure rationale.
+Kexin - Debugging help with proof of correctness, assisted with data structure rationale.
+Siying - Help with final checking and some editing.
+Liam - Created the document and almost forgot to set up the group meeting. Assisted in writing the document and spell-checking paragraphs. 
