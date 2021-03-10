@@ -103,14 +103,14 @@ We will use an array of objects to store the definitions for the abbreviations. 
 
 ### Unexpected Cases/Difficulties
 
-Despite midterm week being over, many classes had project deadlines due right after the midterms, leading to some difficulty in getting the document completed.
+- Despite midterm week being over, many classes had project deadlines due right after the midterms, leading to some difficulty in getting the document completed.
 
-Trying to create a new algorithm to solve this problem was a challenging process. In the end, we used scrapped content from our first algorithm.
+- Trying to create a new algorithm to solve this problem was a challenging process. In the end, we used scrapped content from our first algorithm.
 
 
 ### Task Separation and Responsibilities
 
-Joel - Helped with second algorithm specifics, and data structure rationale.
-Kexin - Debugging help with proof of correctness, assisted with data structure rationale.
-Siying - Help with final checking and some editing.
-Liam - Created the document and almost forgot to set up the group meeting. Assisted in writing the document and spell-checking paragraphs. 
+- Joel - Helped with second algorithm specifics, and data structure rationale.
+- Kexin - Debugging help with proof of correctness, assisted with data structure rationale.
+- Siying - Help with final checking and some editing.
+- Liam - Created the document and almost forgot to set up the group meeting. Assisted in writing the document and spell-checking paragraphs. 
