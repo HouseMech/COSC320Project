@@ -7,5 +7,8 @@
 # Log file
 *.log
 
-# eclipse file
+# eclipse files
+.settings/*
+bin/*
 .classpath
+.project
