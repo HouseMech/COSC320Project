@@ -9,15 +9,15 @@ public class WordHashmap {
 	public WordHashmap() {
 		Map<String, String> hashmap = new HashMap<String, String>();
         try{
-            File f = new File("slangs.txt");
-            Scanner scan = new Scanner(f);
+            File myFile = new File("slangs.txt");
+            Scanner scan = new Scanner(myFile); // Creates scanner on slangs file
             while(scan.hasNextLine()){
                 String data = scan.nextLine();
-                String a [] = data.split("\\s", 2);
-                if(a[0].equals("")){
+                String splitData [] = data.split("\\s", 2); // splits on the whitespace found, and allows for only 2 array indeces
+                if(splitData[0].equals("")){ // Some lines are empty, if so then just continue to next line
                     continue;
                 }else{
-                    hashmap.put(a[0], a[1]);
+                    hashmap.put(splitData[0], splitData[1]); // Puts the key and value in correct position into hasmap
                 }
                 
             }
