@@ -23,8 +23,9 @@ public class CSVImporter {
 	        csvWriter.append("\n");
 	        br.readLine(); //Remove header line
 	        while((line = br.readLine()) != null) {
-	           columns = line.split(delimiter);
-	           if (columns.length == 6) {
+	        	columns = line.split(delimiter);
+	        	if (columns.length == 6) {
+	        	   
 		           csvArray = columns[5].toLowerCase().split(" "); //Split string based on delimiter. This is the array we will feed into our algorithm.
 		           for (int i = 0; i < csvArray.length; i++) {
 						returnedValue = wordmap.getKey(csvArray[i]);
@@ -36,7 +37,6 @@ public class CSVImporter {
 		           for (String word : csvArray) {
 		        	   editedTweet += word + " "; //rebuild the new tweet with changed words
 		           }
-		           System.out.println(editedTweet);
 		           csvWriter.append(String.join(",", editedTweet));
 	               csvWriter.append("\n");
 	               editedTweet = "";

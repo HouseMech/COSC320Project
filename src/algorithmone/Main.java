@@ -21,7 +21,7 @@ public class Main {
 		Collections.sort(listOfFiles);
 		System.out.println(listOfFiles.toString());
 
-		for (int i = 0; i < 1; i++) {
+		for (int i = 0; i < listOfFiles.size(); i++) {
 		  if (listOfFiles.get(i).isFile()) {
 			System.out.println("File " + listOfFiles.get(i).getName());
 			beforeTime = System.currentTimeMillis();
