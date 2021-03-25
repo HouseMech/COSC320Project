@@ -114,3 +114,5 @@ We will use an array of objects to store the definitions for the abbreviations. 
 - Kexin - Debugging help with proof of correctness, assisted with data structure rationale.
 - Siying - Help with final checking and some editing.
 - Liam - Created the document and almost forgot to set up the group meeting. Assisted in writing the document and spell-checking paragraphs. 
+
+## Milestone 3
