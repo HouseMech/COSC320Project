@@ -29,20 +29,6 @@ public class Main {
 		    afterTime = System.currentTimeMillis();
 		    System.out.println("time taken = " + (afterTime - beforeTime));
 		  }
-		}
-		
-		
-		
-		
-		
-		
-		
-			
-		   
-		
-			
-		}
-	
-	
-
+		}	
+	}
  }
