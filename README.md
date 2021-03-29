@@ -73,10 +73,10 @@ At the termination of the algorithm, all abbreviations in S have been replaced.
 - Midterm week crammed our schedules and as a result, we found it challenging to find time to finish this document.
 
 ### Task Separation and Responsibilities
-- Liam Harbec - Created the document and set up group meeting times. Assisted in re-writing and spell-checking. 
-- Joel Semeniuk - Helped with the ideas for the algorithms as well as the proofs.
-- Siying Wu - Helped with final checking and some editing.
-- Kexin Zhao - Major debugging help with proof of correctness.
+- Liam - Created the document and set up group meeting times. Assisted in re-writing and spell-checking. 
+- Joel - Helped with the ideas for the algorithms as well as the proofs.
+- Siying - Helped with final checking and some editing.
+- Kexin - Major debugging help with proof of correctness.
 
 ## Milestone 2
 
