@@ -3,13 +3,13 @@
 ## Project Number and Topic: #1 Keyword Replacement Tool
 
 ### Group Lead:
-Liam Harbec
+Liam
 
 ### Group Members:
-- Liam Harbec 66453853
-- Joel Semeniuk 76751858
-- Siying Wu 60081734
-- Kexin Zhao 56958317
+- Liam
+- Joel
+- Siying
+- Kexin
 
 ## Proposal
 
