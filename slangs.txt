@@ -58,7 +58,7 @@ bae	before anyone else
 
 bak	back at the keyboard
 
-bbl	bee back later
+bbl	be back later
 
 bday	birthday
 
@@ -82,7 +82,7 @@ bg	big grin
 
 bmfe	best mates forever
 
-bmfl	best mates life
+bmfl	best mates for life
 
 bozo	idiot
 
@@ -104,7 +104,7 @@ btw	by the way
 
 buddy	friend
 
-c'mon	came on
+c'mon	come on
 
 cid crying in disgrace
 
