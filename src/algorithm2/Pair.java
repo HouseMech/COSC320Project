@@ -2,6 +2,8 @@ package algorithm2;
 
 public class Pair {
 
+	// key is the slang
+	// value is full form
 	private String key, value;
 
 	public Pair(String key, String value) {

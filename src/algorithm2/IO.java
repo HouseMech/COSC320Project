@@ -9,6 +9,7 @@ import java.util.ArrayList;
 
 public class IO {
 
+	// reads input file and returns a string array list with each line as an element
 	public static ArrayList<String> readInput(String filename) throws Exception {
 		ArrayList<String> r = new ArrayList<>();
 		BufferedReader reader = new BufferedReader(new FileReader(new File(filename)));
@@ -21,6 +22,7 @@ public class IO {
 		return r;
 	}
 
+	// writes the output array list to a file with each element as a line
 	public static void writeOutput(ArrayList<String> output, String filename) throws Exception {
 		BufferedWriter writer = new BufferedWriter(new FileWriter(filename));
 		for (int i = 0; i < output.size(); i++) {
@@ -30,6 +32,7 @@ public class IO {
 		writer.close();
 	}
 
+	// reads the "./slangs.txt" file and returns an array list of slang, full form pairs
 	public static ArrayList<Pair> readWordMap() throws Exception {
 		ArrayList<Pair> r = new ArrayList<>();
 		BufferedReader reader = new BufferedReader(new FileReader(new File("./slangs.txt")));
