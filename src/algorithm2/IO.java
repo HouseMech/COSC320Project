@@ -12,10 +12,10 @@ public class IO {
 	public static ArrayList<String> readInput(String filename) throws Exception {
 		ArrayList<String> r = new ArrayList<>();
 		BufferedReader reader = new BufferedReader(new FileReader(new File(filename)));
-		reader.readLine(); // skip header line
+		// reader.readLine(); // skip header line
 		String line;
 		while ((line = reader.readLine()) != null) {
-			r.add(line);
+			r.add(line.trim());
 		}
 		reader.close();
 		return r;
@@ -28,5 +28,19 @@ public class IO {
 			writer.newLine();
 		}
 		writer.close();
+	}
+
+	public static ArrayList<Pair> readWordMap() throws Exception {
+		ArrayList<Pair> r = new ArrayList<>();
+		BufferedReader reader = new BufferedReader(new FileReader(new File("./slangs.txt")));
+		String line;
+		while ((line = reader.readLine()) != null) {
+			if (!(line = line.trim()).equals("")) {
+				String[] data = line.split("\\s", 2);
+				r.add(new Pair(data[0], data[1]));
+			}
+		}
+		reader.close();
+		return r;
 	}
 }
