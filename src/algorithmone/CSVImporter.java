@@ -19,11 +19,11 @@ public class CSVImporter {
 	        
 	        csvWriter.append("text");
 	        csvWriter.append("\n");
-	        br.readLine(); //Remove header line
+	        br.readLine(); // Remove header line
 	        int count = 0;
 	        while((line = br.readLine()) != null) {
 	        	if(line.trim().length()==0){
-	        	    continue; //rest of loop body is skipped
+	        	    continue; // rest of loop body is skipped
 	        	}
 	        	try {
 		        	if(line.charAt(0) == '"') {
@@ -36,7 +36,7 @@ public class CSVImporter {
 	        		continue;
 	        	}
 
-	           csvArray = line.toLowerCase().split(" "); //Split string based on delimiter. This is the array we will feed into our algorithm.
+	           csvArray = line.toLowerCase().split(" "); // Split string based on delimiter. This is the array we will feed into our algorithm.
 	           for (int i = 0; i < csvArray.length; i++) {
 					returnedValue = wordmap.getKey(csvArray[i]);
 					if (returnedValue != null) { 
