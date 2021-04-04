@@ -13,8 +13,12 @@ public class Main {
 		Collections.addAll(listFiles, new File("./inputcsv").listFiles());
 		Collections.sort(listFiles);
 
+		// create output directory
+		File outdir = new File("./a2output");
+		outdir.mkdirs();
+
 		// get slang pairs map
-		ArrayList<Pair> slangs = IO.readWordMap();
+		ArrayList<Pair> slangs = IO.readWordPairMap();
 
 		// loop through input files
 		for (int i = 0; i < listFiles.size(); i++) {
@@ -42,7 +46,7 @@ public class Main {
 				output.add(String.join(" ", words));
 			}
 			time = System.currentTimeMillis() - time;
-			IO.writeOutput(output, "./Algorithm2Output/output" + listFiles.get(i).getName());
+			IO.writeOutput(output, outdir.getPath() + "/" + listFiles.get(i).getName());
 			System.out.println(time);
 		}
 

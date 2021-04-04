@@ -33,7 +33,7 @@ public class IO {
 	}
 
 	// reads the "./slangs.txt" file and returns an array list of slang, full form pairs
-	public static ArrayList<Pair> readWordMap() throws Exception {
+	public static ArrayList<Pair> readWordPairMap() throws Exception {
 		ArrayList<Pair> r = new ArrayList<>();
 		BufferedReader reader = new BufferedReader(new FileReader(new File("./slangs.txt")));
 		String line;
