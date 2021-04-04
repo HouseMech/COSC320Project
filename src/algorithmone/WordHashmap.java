@@ -13,11 +13,11 @@ public class WordHashmap {
             Scanner scan = new Scanner(myFile); // Creates scanner on slangs file
             while(scan.hasNextLine()){
                 String data = scan.nextLine();
-                String splitData [] = data.split("\\s", 2); // splits on the whitespace found, and allows for only 2 array indeces
+                String splitData [] = data.split("\\s", 2); // splits on the whitespace found, and allows for only 2 array indices
                 if(splitData[0].equals("")){ // Some lines are empty, if so then just continue to next line
                     continue;
                 }else{
-                    hashmap.put(splitData[0], splitData[1]); // Puts the key and value in correct position into hasmap
+                    hashmap.put(splitData[0], splitData[1]); // Puts the key and value in correct position into hash map
                 }
                 
             }
