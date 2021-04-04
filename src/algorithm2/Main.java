@@ -28,7 +28,7 @@ public class Main {
 			ArrayList<String> output = new ArrayList<>();
 			// start timing
 			long time = System.currentTimeMillis();
-			// loop array list of input
+			// loop array list of input (lines)
 			for (int j = 0; j < input.size(); j++) {
 				String line = input.get(j);
 				// split line to a space separated array (words)
